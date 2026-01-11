@@ -1,13 +1,13 @@
 {% set name = "XStatic-Bootstrap" %}
-{% set version = "4.5.3.1" %}
+{% set version = "5.3.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cf67d205437b32508a88b69a7e7c5bbe2ca5a8ae71097391a6a6f510ebfd2820
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') | lower }}-{{ version }}.tar.gz
+  sha256: 04f5cc95bbe5438d1e851d06c4ca1ad7f84bd36a09b4de5a1f54b524e8506859
 
 build:
   number: 0
