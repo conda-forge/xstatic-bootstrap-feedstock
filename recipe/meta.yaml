@@ -15,10 +15,9 @@ build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-  build:
-    - pip
   host:
     - python {{ python_min }}
+    - xstatic
     - pip
   run:
     python >={{ python_min }}
