@@ -17,15 +17,15 @@ build:
 requirements:
   build:
     - pip
-    - setuptools
   host:
     - python {{ python_min }}
-    - setuptools
     - pip
   run:
     python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - xstatic.pkg.bootstrap
 
