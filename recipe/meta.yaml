@@ -27,6 +27,7 @@ test:
     - python {{ python_min }}
   imports:
     - xstatic.pkg
+    - xstatic.pkg.bootstrap
 
 about:
   home: https://xstatic.readthedocs.io/
